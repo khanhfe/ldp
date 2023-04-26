@@ -11,7 +11,23 @@ body {
   line-height: 1.3;
   color: #464646; }
 
-/* restyle */
+.color-black {
+  color: #000; }
+
+.color-green,
+.success,
+.acept {
+  color: #21A849; }
+
+.color-red,
+.failed,
+.cancel,
+.danger {
+  color: #EB1D1D; }
+
+.color-gray {
+  color: #8A8A8A; }
+
 .btn {
   width: 147px;
   height: 40px;
@@ -44,18 +60,6 @@ body {
   background-color: #F5A14C;
   border-color: #F5A14C; }
 
-.color-black {
-  color: #000; }
-
-.color-green {
-  color: #21A849; }
-
-.color-red {
-  color: #EB1D1D; }
-
-.color-gray {
-  color: #8A8A8A; }
-
 .text-uppercase {
   text-transform: uppercase; }
 
@@ -87,35 +91,26 @@ h6,
   border: 1px solid #D2CBCB;
   margin-top: 1px; }
 
-/* main css */
-.site-container {
-  background-color: #fff;
-  overflow-x: hidden; }
-  .site-container header {
-    background-color: #3A4F7B; }
-  .site-container .logo {
-    padding: 12px 0 12px 46px; }
-
-.site-content .sidebar-left__title {
+.sidebar-left__title {
   padding-top: 17px;
   padding-left: 20px; }
-  .site-content .sidebar-left__title .back {
+  .sidebar-left__title .back {
     cursor: pointer;
     width: 15px;
     justify-content: center;
     text-align: center; }
-  .site-content .sidebar-left__title .title {
+  .sidebar-left__title .title {
     font-size: 18px; }
-  .site-content .sidebar-left__title .create-request {
+  .sidebar-left__title .create-request {
     cursor: pointer;
     display: block; }
 
-.site-content .sidebar-left__content .nav-tabs {
+.sidebar-left__content .nav-tabs {
   width: 100%;
   display: flex;
   list-style: none;
   position: relative; }
-  .site-content .sidebar-left__content .nav-tabs::after {
+  .sidebar-left__content .nav-tabs::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -124,13 +119,13 @@ h6,
     bottom: 0;
     background-color: #D2CBCB;
     z-index: 1; }
-  .site-content .sidebar-left__content .nav-tabs li {
+  .sidebar-left__content .nav-tabs li {
     width: 140px;
     text-align: center;
     color: #8A8A8A;
     font-weight: 600;
     position: relative; }
-    .site-content .sidebar-left__content .nav-tabs li::after {
+    .sidebar-left__content .nav-tabs li::after {
       position: absolute;
       content: "";
       width: 100%;
@@ -139,59 +134,59 @@ h6,
       left: 0;
       bottom: -1px;
       z-index: 2; }
-    .site-content .sidebar-left__content .nav-tabs li.active, .site-content .sidebar-left__content .nav-tabs li:hover {
+    .sidebar-left__content .nav-tabs li.active, .sidebar-left__content .nav-tabs li:hover {
       color: #66CDEE; }
-      .site-content .sidebar-left__content .nav-tabs li.active::after, .site-content .sidebar-left__content .nav-tabs li:hover::after {
+      .sidebar-left__content .nav-tabs li.active::after, .sidebar-left__content .nav-tabs li:hover::after {
         background-color: #66CDEE; }
-    .site-content .sidebar-left__content .nav-tabs li a {
+    .sidebar-left__content .nav-tabs li a {
       text-decoration: none;
       color: inherit;
       padding: 7px 0;
       display: inline-block;
       border-bottom: 2px solid transparent; }
 
-.site-content .main {
+.main {
   flex: 1 0 auto; }
-  .site-content .main-container {
+  .main-container {
     width: 100%;
     padding-left: 38px; }
-  .site-content .main__header {
+  .main__header {
     border-bottom: 1px solid #D2CBCB; }
-    .site-content .main__header__title {
+    .main__header__title {
       text-transform: uppercase;
       font-size: 20px;
       font-weight: 600;
       line-height: 1.5;
       color: #000;
       padding: 18px 0 10px; }
-    .site-content .main__header__description {
+    .main__header__description {
       color: #8A8A8A;
       line-height: 1.5; }
-    .site-content .main__header__box-button {
+    .main__header__box-button {
       width: 40.56604%;
       margin: 12px 20px 6px auto; }
-      .site-content .main__header__box-button button {
+      .main__header__box-button button {
         display: block;
         width: 100%; }
-        .site-content .main__header__box-button button.btn-danger {
+        .main__header__box-button button.btn-danger {
           margin: 6px 0 14px; }
-      .site-content .main__header__box-button small {
+      .main__header__box-button small {
         font-size: 8px;
         line-height: 1.5;
         font-weight: 300;
         font-style: italic; }
-  .site-content .main-table {
+  .main-table {
     padding: 12px 0 20px; }
-    .site-content .main-table:not(:last-child) {
+    .main-table:not(:last-child) {
       border-bottom: 1px solid #D2CBCB; }
-    .site-content .main-table.table-1 .main-table__row:not(:last-child) {
+    .main-table.table-1 .main-table__row:not(:last-child) {
       margin-bottom: 13px; }
-    .site-content .main-table.table-2 .main-table__row:not(:last-child), .site-content .main-table.table-3 .main-table__row:not(:last-child) {
+    .main-table.table-2 .main-table__row:not(:last-child), .main-table.table-3 .main-table__row:not(:last-child) {
       margin-bottom: 10px; }
-    .site-content .main-table.table-2 .table-left {
+    .main-table.table-2 .table-left {
       padding-right: 21px;
       position: relative; }
-      .site-content .main-table.table-2 .table-left::after {
+      .main-table.table-2 .table-left::after {
         position: absolute;
         content: "";
         width: 1px;
@@ -199,62 +194,62 @@ h6,
         bottom: 0;
         right: 0;
         background-color: #D2CBCB; }
-    .site-content .main-table.table-2 .table-right {
+    .main-table.table-2 .table-right {
       padding-left: 27px; }
-      .site-content .main-table.table-2 .table-right .field-radio {
+      .main-table.table-2 .table-right .field-radio {
         gap: 0; }
-      .site-content .main-table.table-2 .table-right label {
+      .main-table.table-2 .table-right label {
         min-width: 80px;
         margin-right: 19px; }
-      .site-content .main-table.table-2 .table-right input.note {
+      .main-table.table-2 .table-right input.note {
         height: 25px;
         margin-left: 11px; }
-    .site-content .main-table.table-3 label {
+    .main-table.table-3 label {
       flex: 0 0 auto; }
-    .site-content .main-table.table-3 .money {
+    .main-table.table-3 .money {
       gap: 12px;
       margin-left: 64px;
       position: relative; }
-      .site-content .main-table.table-3 .money::after {
+      .main-table.table-3 .money::after {
         position: absolute;
         content: "VND";
         text-transform: uppercase;
         right: 5px;
         padding-left: 5px;
         border-left: 1px solid #52C8ED; }
-      .site-content .main-table.table-3 .money.disable::after {
+      .main-table.table-3 .money.disable::after {
         display: none; }
-    .site-content .main-table__title {
+    .main-table__title {
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
       color: #000;
       margin-bottom: 13px; }
-    .site-content .main-table__row {
+    .main-table__row {
       display: flex;
       align-items: center;
       width: 100%; }
-      .site-content .main-table__row .label {
+      .main-table__row .label {
         flex: 0 0 auto; }
-        .site-content .main-table__row .label label {
+        .main-table__row .label label {
           flex: 0 0 auto; }
-        .site-content .main-table__row .label-140 {
+        .main-table__row .label-140 {
           width: 12.5%;
           min-width: 140px; }
-        .site-content .main-table__row .label-195 {
+        .main-table__row .label-195 {
           width: 17.41071%;
           min-width: 195px; }
-        .site-content .main-table__row .label__note {
+        .main-table__row .label__note {
           padding: 0 10px 0 23px;
           flex: 1 0 auto; }
-      .site-content .main-table__row .field {
+      .main-table__row .field {
         width: 26.78571%; }
-        .site-content .main-table__row .field-radio {
+        .main-table__row .field-radio {
           display: flex;
           align-items: center;
           gap: 38px; }
-      .site-content .main-table__row select,
-      .site-content .main-table__row input[type=text] {
+      .main-table__row select,
+      .main-table__row input[type=text] {
         width: 100%;
         height: 28px;
         border: 1px solid #52C8ED;
@@ -264,11 +259,11 @@ h6,
         line-height: 1.5;
         font-size: 14px;
         font-weight: 300; }
-      .site-content .main-table__row input[type=radio]:checked {
+      .main-table__row input[type=radio]:checked {
         color: #52C8ED; }
-      .site-content .main-table__row button,
-      .site-content .main-table__row input[type=button],
-      .site-content .main-table__row input[type=submit] {
+      .main-table__row button,
+      .main-table__row input[type=button],
+      .main-table__row input[type=submit] {
         width: 106px;
         height: 28px;
         outline: 0;
@@ -279,13 +274,22 @@ h6,
         border-radius: 10px;
         padding: 0;
         margin-left: 21px; }
-      .site-content .main-table__row input[type=text]:disabled {
+      .main-table__row input[type=text]:disabled {
         background-color: #D9D4D4;
         border-color: #D9D4D4; }
-    .site-content .main-table .total-money {
+    .main-table .total-money {
       font-weight: 600; }
-      .site-content .main-table .total-money span {
+      .main-table .total-money span {
         color: #EB1D1D; }
+
+/* main css */
+.site-container {
+  background-color: #fff;
+  overflow-x: hidden; }
+  .site-container header {
+    background-color: #3A4F7B; }
+  .site-container .logo {
+    padding: 12px 0 12px 46px; }
 
 .field-radio label {
   line-height: 1.5;
