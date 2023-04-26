@@ -48,12 +48,32 @@
                 </div>
             </div>
             <div class="main">
-                <form action="duyet-thu-2.html" method="post">
+                <form action="/duyet-thu-2.html" method="post">
                     <div class="main__header">
                         <div class="main-container d-flex justify-between">
-                            <h2 class="main__header__title">TẠO ĐỀ XUẤT DUYỆT THU</h2>
+                            <div class="main__header__left">
+                                <h2 class="main__header__title">[ERP duyệt thu] - Yêu cầu PT2303001</h2>
+                                <div class="main__header__description">
+                                    <div class="date-time">
+                                        Thời hạn xử lý: 15:45 - 15/03/2023
+                                    </div>
+                                    <div class="status">
+                                        Trạng thái: <span class="color-green">KTT phê duyệt</span>
+                                    </div>
+                                    <div class="reason">
+                                        Lý do từ chối:   ---
+                                    </div>
+                                    <div class="comment">
+                                        Lưu ý/Comment:   ---
+                                    </div>
+                                </div>
+                            </div>
                             <div class="main__header__box-button">
-                                <button type="submit" class="btn btn-primary">Gửi đề xuất</button>
+                                <button type="submit" class="btn btn-danger">Hủy đề xuất</button>
+                                <button type="submit" class="btn btn-secondary">Hủy đề
+                                    xuất</button>
+                                <small>Bạn chỉ được phép hủy đề xuất khi chưa có bất kỳ hành động phê duyệt nào. Để hủy,
+                                    vui lòng liên hệ cấp đang thực hiện</small>
                             </div>
                         </div>
                     </div>
@@ -99,7 +119,7 @@
                                 <h3 class="main-table__title">Chứng từ đi kèm</h3>
                                 <div class="main-table__row">
                                     <div class="main-table__column label-195">1. Bảng kê danh mục</div>
-                                    <div class="main-table__column field-radio">
+                                    <div class="main-table__column field-radio disable">
                                         <input id="yes1" type="radio" value="yes" name="1">
                                         <label for="yes1">
                                             <span>Có</span>
@@ -112,7 +132,7 @@
                                 </div>
                                 <div class="main-table__row">
                                     <div class="main-table__column label-195">2. Quyết định thanh lý</div>
-                                    <div class="main-table__column field-radio">
+                                    <div class="main-table__column field-radio disable">
                                         <input id="yes2" type="radio" value="yes" name="2">
                                         <label for="yes2">
                                             <span>Có</span>
@@ -125,7 +145,7 @@
                                 </div>
                                 <div class="main-table__row">
                                     <div class="main-table__column label-195">3. Biên bản giao nhận</div>
-                                    <div class="main-table__column field-radio">
+                                    <div class="main-table__column field-radio disable">
                                         <input id="yes3" type="radio" value="yes" name="3">
                                         <label for="yes3">
                                             <span>Có</span>
@@ -138,7 +158,7 @@
                                 </div>
                                 <div class="main-table__row">
                                     <div class="main-table__column label-195">4. Hóa đơn bán hàng</div>
-                                    <div class="main-table__column field-radio">
+                                    <div class="main-table__column field-radio disable">
                                         <input id="bill-yes" type="radio" value="yes" name="bill">
                                         <label for="bill-yes">
                                             <span>Có</span>
@@ -153,7 +173,7 @@
                             <div class="table-right">
                                 <h3 class="main-table__title">Loại</h3>
                                 <div class="main-table__row">
-                                    <div class="main-table__column field-radio">
+                                    <div class="main-table__column field-radio disable">
                                         <input id="hard_copy" type="radio" value="yes" name="hard_copy">
                                         <label for="hard_copy">
                                             <span>Bản cứng</span>
@@ -165,7 +185,7 @@
                                     </div>
                                 </div>
                                 <div class="main-table__row">
-                                    <div class="main-table__column field-radio">
+                                    <div class="main-table__column field-radio disable">
                                         <input id="liquidation_decision_type-yes" type="radio" value="yes"
                                             name="liquidation_decision_type">
                                         <label for="liquidation_decision_type-yes" class="disable">
@@ -181,7 +201,7 @@
                                     </div>
                                 </div>
                                 <div class="main-table__row">
-                                    <div class="main-table__column field-radio">
+                                    <div class="main-table__column field-radio disable">
                                         <input id="receipt_delivery_type-yes" type="radio" value="yes"
                                             name="receipt_delivery_type">
                                         <label for="receipt_delivery_type-yes">
@@ -195,7 +215,7 @@
                                     </div>
                                 </div>
                                 <div class="main-table__row">
-                                    <div class="main-table__column field-radio">
+                                    <div class="main-table__column field-radio disable">
                                         <input id="bill_type-yes" type="radio" value="yes" name="bill_type">
                                         <label for="bill_type-yes">
                                             <span>Có</span>
@@ -209,18 +229,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main-table table-3 payment_method">
+                    <div class="main-table table-3">
                         <div class="main-container">
                             <h3 class="main-table__title">Hình thức thu tiền</h3>
                             <div class="main-table__row">
                                 <div class="main-table__column label-195">1. Thu tiền mặt</div>
-                                <div class="main-table__column field-radio">
-                                    <input id="cash-yes" type="radio" value="cash_yes" name="payment_method">
-                                    <label for="cash-yes" class="group">
+                                <div class="main-table__column field-radio disable">
+                                    <input id="cash-yes" type="radio" value="yes" name="cash">
+                                    <label for="cash-yes">
                                         <span>Có</span>
                                     </label>
-                                    <input id="cash-no" type="radio" value="cash_no" name="payment_method">
-                                    <label for="cash-no" class="group">
+                                    <input id="cash-no" type="radio" value="no" name="cash">
+                                    <label for="cash-no">
                                         <span>Không</span>
                                     </label>
                                 </div>
@@ -231,19 +251,19 @@
                             </div>
                             <div class="main-table__row">
                                 <div class="main-table__column label-195">2. Chuyển khoản</div>
-                                <div class="main-table__column field-radio">
-                                    <input id="banking-yes" type="radio" value="banking_yes" name="payment_method">
-                                    <label for="banking-yes" class="group">
+                                <div class="main-table__column field-radio disable">
+                                    <input id="banking-yes" type="radio" value="yes" name="bank_transfer">
+                                    <label for="banking-yes">
                                         <span>Có</span>
                                     </label>
-                                    <input id="banking-no" type="radio" value="banking_no" name="payment_method">
-                                    <label for="banking-no" class="group">
+                                    <input id="banking-no" type="radio" value="no" name="bank_transfer">
+                                    <label for="banking-no">
                                         <span>Không</span>
                                     </label>
                                 </div>
-                                <div class="main-table__column d-flex align-center money disable">
-                                    <label for="money_banking">Số tiền</label>
-                                    <input type="text" disabled name="money_banking" id="money_banking">
+                                <div class="main-table__column d-flex align-center money">
+                                    <label for="bank_cash">Số tiền</label>
+                                    <input type="text" class="disable" name="bank_cash" id="bank_cash">
                                 </div>
                             </div>
                             <div class="total-money">
@@ -253,7 +273,10 @@
                     </div>
                 </form>
             </div>
-            <div class="sidebar"></div>
+            <div class="sidebar sidebar-right">
+                <h3 class="sidbar-right__title color-black">Trạng thái chi tiết</h3>
+                <div class="list"></div>
+            </div>
         </div>
         <footer></footer>
     </div>
