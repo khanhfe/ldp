@@ -4,6 +4,12 @@
 
 .d-flex {
     display: flex;
+    &.gap-2{
+        gap: 50px;
+    }
+    &.gap-3{
+        gap: 25px;
+    }
 }
 
 .flex-wrap {
@@ -26,4 +32,47 @@ h5,
 h6,
 .semibold {
     font-weight: 600;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.blod {
+    font-weight: 700;
+}
+
+.black {
+    font-weight: 800;
+}
+
+.normal{
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.flex-150 {
+    width: percentage($number: 150/1120);
+    min-width: 150px;
+}
+.pd-r30{
+    padding-right: 30px;
+}
+.mb-12{
+    margin-bottom: 12px;
 }

@@ -15,12 +15,39 @@
             font-weight: 600;
             line-height: 1.5;
             color: #000;
-            padding: 18px 0 10px;
+            padding: 18px 0 0;
         }
 
-        &__description {
+        &__meta {
             color: #8A8A8A;
             line-height: 1.5;
+            font-size: 15px;
+            margin-top: 5px;
+            &:last-child{
+                margin-bottom: 10px;
+            }
+            &.status{
+                margin-bottom: 10px;
+                span.value{
+                    &::after{
+                        margin-left: 10px;
+                        display: inline-block;
+                        content: "";
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        background-color: currentColor;
+                        transform: translateY(1px);
+                    }
+                }
+            }
+            .date-time{
+                margin-right: 30px;
+            }
+            .value{
+                font-weight: 600;
+            }
         }
 
         &__box-button {
@@ -97,6 +124,7 @@
                 input.note {
                     height: 25px;
                     margin-left: 11px;
+                    display: none;
                 }
             }
         }
@@ -120,7 +148,7 @@
                     border-left: 1px solid #52C8ED;
                 }
 
-                &.disable {
+                &.disabled {
                     &::after {
                         display: none;
                     }
@@ -217,7 +245,20 @@
                 border-color: #D9D4D4;
             }
         }
-
+        &__column{
+            .icon{
+                margin-right: 12px;
+            }
+            &.addition-field{
+                display: none;
+                margin-left: 23px;
+                align-items: center;
+                span{
+                    flex: 0 0 auto;
+                    margin-right: 9px;
+                }
+            }
+        }
         .total-money {
             font-weight: 600;
 
